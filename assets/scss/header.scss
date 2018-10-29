@@ -1,0 +1,33 @@
+$bgCover:#0984e3;
+// $bg: linear-gradient(45deg, #0984e3, #74b9ff, #00cec9);
+
+#home {
+  background: white;
+  min-height: 100vh;
+  margin-top: 40px;
+  text-align: center;
+
+  .home__content {
+    color: #2d3436;
+    position: absolute;
+    top: calc(50% - 40px);
+    transform: translateY(-50%);
+    width: 100%;
+    text-transform: uppercase;
+
+    .home__content--title {
+      font-size: 5rem;
+      font-weight: bold;
+    }
+  
+    .home__content--subtitle {
+      font-size: 3rem;
+    }
+
+    .home__content--hr {
+      width: 40px;
+      border: 3px solid $bgCover;
+    }
+  }
+
+}

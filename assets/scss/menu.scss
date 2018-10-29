@@ -1,0 +1,30 @@
+$bg: #2d3436;
+$colorOnBg: #dfe6e9;
+
+.menu {
+  background-color: $bg;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+
+    li {
+      margin-right: 2rem;
+
+      a {
+        color: $colorOnBg;
+        text-decoration: none;
+
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}

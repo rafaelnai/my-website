@@ -1,0 +1,36 @@
+$color: #dfe6e9;
+
+#skills {
+  background-color: #2d3436;
+  color: $color;
+  padding: 1rem 0 2rem 0;
+  text-align: center;
+
+  h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 2rem 0 1rem 0;
+    letter-spacing: 2px;
+  }
+  
+  .skills__list {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    .skills__list--item {
+      height: 100px;
+      width: 250px;
+      margin: 2rem 0;
+
+      h4 {
+        color:$color;
+        margin-top: 1rem;
+      }
+
+      svg {
+        height: 80px;
+      }
+    }
+  }
+}
