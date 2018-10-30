@@ -2,9 +2,8 @@ $bg: #2d3436;
 $colorOnBg: #dfe6e9;
 
 .menu {
-  background-color: $bg;
-  height: 40px;
-  position: fixed;
+  position: absolute;
+  height: 70px;
   top: 0;
   width: 100%;
 
@@ -16,6 +15,7 @@ $colorOnBg: #dfe6e9;
 
     li {
       margin-right: 2rem;
+      font-size: 1.3rem;
 
       a {
         color: $colorOnBg;
