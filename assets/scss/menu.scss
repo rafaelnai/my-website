@@ -2,13 +2,16 @@ $bg: linear-gradient(60deg, #74b9ff, #00cec9, #0984e3, #0672c5);
 $colorOnBg: #dfe6e9;
 
 .menu {
+  background-color: transparent;
   position: absolute;
   height: 70px;
   top: 0;
   width: 100%;
+  z-index: 999;
+  transition: height ease-in-out .5s;
 
   .menu__backToTop {
-    display: flex;
+    display: none;
     position: fixed;
     right: 15px;
     bottom: 15px;
@@ -30,6 +33,17 @@ $colorOnBg: #dfe6e9;
       margin-top: 25%;
     }
     
+  }
+
+  &.menu-active {
+    position: fixed;
+    background-color: #2d3436;
+    height:40px;
+    transition: height linear .3s;
+
+    .menu__backToTop {
+      display: flex;
+    }
   }
 
   ul {

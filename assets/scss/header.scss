@@ -8,6 +8,7 @@ $bgInverse: linear-gradient(60deg, #0672c5, #0984e3, #00cec9, #74b9ff);
   background-size: cover;
   
   .home__content {
+    z-index: 1;
     position: absolute;
     top: 50%;
     left: 50%;
