@@ -1,9 +1,11 @@
 $bgCover:#0984e3;
 $bg: linear-gradient(60deg, #74b9ff, #00cec9, #0984e3, #0672c5);
+$bgInverse: linear-gradient(60deg, #0672c5, #0984e3, #00cec9, #74b9ff);
 
 #home {
   min-height: 100vh;
-  background: $bg;
+  background-image: url(../images/bg-city.jpg);
+  background-size: cover;
   
   .home__content {
     position: absolute;
@@ -47,6 +49,13 @@ $bg: linear-gradient(60deg, #74b9ff, #00cec9, #0984e3, #0672c5);
       padding: 1rem;
       text-decoration: none;
       text-align: center;
+      transition: .2s;
+
+      &:hover {
+        background: #0672c5;
+        transform: translateY(3%);
+        transition: transform .2s;
+      }
     }
   }
 
