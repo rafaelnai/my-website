@@ -11,8 +11,17 @@
     }
   }
 
+  .experience__subtitle {
+    text-align: center;
+  }
+
   .experience__content--job {
     margin: 1rem 0;
+    text-align: center;
+
+    @media screen and (min-width: 780px) {
+      text-align: left;
+    }
 
     h5 {
       font-size: 1.1rem;
