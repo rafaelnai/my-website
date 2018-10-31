@@ -19,7 +19,7 @@
     margin: 1rem 0;
     text-align: center;
 
-    @media screen and (min-width: 780px) {
+    @media screen and ($md) {
       text-align: left;
     }
 

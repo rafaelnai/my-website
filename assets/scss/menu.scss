@@ -1,16 +1,13 @@
-$bg: linear-gradient(60deg, #74b9ff, #00cec9, #0984e3, #0672c5);
-$colorOnBg: #dfe6e9;
-
 .menu {
   position: fixed;
   top: 0;
   left: -100%;
   width: 100%;
   z-index: 999;
-  background-color: #2d3436;
+  background-color: $bgDark;
   transition: left ease-in-out .2s;
   
-  @media screen and (min-width: 780px){
+  @media screen and ($md){
     transition: height ease-in-out .5s;
     position: absolute;
     left: auto;
@@ -25,7 +22,7 @@ $colorOnBg: #dfe6e9;
     bottom: 15px;
     height: 50px;
     width: 50px;
-    background-color: #0984e3;
+    background-color: $bgCover;
     border: 3px solid #fff;
     border-radius: 10px;
     justify-content: space-around;
@@ -47,7 +44,7 @@ $colorOnBg: #dfe6e9;
     left: 0;
     transition: .2s ease-in-out;
     
-    @media screen and (min-width: 780px){
+    @media screen and ($md){
       position: fixed;
       background: rgba(0, 0, 0, .9);
       transition: height linear .3s;
@@ -67,7 +64,7 @@ $colorOnBg: #dfe6e9;
     height: 100vh;
     margin-top: 60px;
     
-    @media screen and (min-width: 780px){
+    @media screen and ($md){
       justify-content: center;
       align-items: center;
       margin-top: 0;
@@ -78,9 +75,9 @@ $colorOnBg: #dfe6e9;
     li {
       font-size: 1.5rem;
       text-align: center;
-      border-bottom: 2px solid darken(#2d3436, 2%);
+      border-bottom: 2px solid darken($bgDark, 2%);
       
-      @media screen and (min-width: 780px){
+      @media screen and ($md){
         font-size: 1.2rem;
         padding: 0 1.5rem;
         margin-right: 2rem;
@@ -92,10 +89,10 @@ $colorOnBg: #dfe6e9;
         width: 100vw;
         height: 60px;
         line-height: 2.5;
-        color: $colorOnBg;
+        color: $colorLight;
         text-decoration: none;
 
-        @media screen and (min-width: 780px){
+        @media screen and ($md){
           width: auto;
         }
 
@@ -124,13 +121,13 @@ $colorOnBg: #dfe6e9;
   &:after {
     content: '';
     display: block;
-    border-top: .9rem double #dfe6e9;
-    border-bottom: .3rem solid #dfe6e9;
+    border-top: .9rem double $colorLight;
+    border-bottom: .3rem solid $colorLight;
     height: .2rem;
     width: 30px;
   }
   
-  @media screen and (min-width: 780px){
+  @media screen and ($md){
     display: none;
   }
 }

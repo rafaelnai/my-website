@@ -1,8 +1,6 @@
-$color: #dfe6e9;
-
 #skills {
-  background-color: #2d3436;
-  color: $color;
+  background-color: $bgDark;
+  color: $colorLight;
   text-align: center;
   
   .skills__list {
@@ -15,12 +13,12 @@ $color: #dfe6e9;
       width: 50%;
       margin: 2rem auto;
 
-      @media screen and (min-width: 780px) {
+      @media screen and ($md) {
         width: 250px;
       }
       
       h4 {
-        color:$color;
+        color:$colorLight;
         margin-top: 1rem;
       }
 
